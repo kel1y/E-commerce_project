@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+.checkout-table {
+  width: 50%;
+  border-collapse: collapse;
+  font-family: Rubik;
+  background-color: #eff0f3;
+  margin: auto;
+}
+
+.checkout-table-header {
+  background-color: black;
+  text-align: center;
+  padding: 0.5%;
+}
+
+.checkout-table-cell:first-child {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  width: 40%;
+}
+.checkout-table-cell:last-child {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  width: 30%;
+}
+
+.checkout-table-cell[data-testid='checkout-item-price'] {
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+.checkout-success-container {
+  margin-top: 5rem;
+  display: block;
+  text-align: center;
+}
+
+.success-message-checkout,
+.checkout-total,
+.checkout-success-message {
+  color: black;
+  font-family: Rubik;
+  font-weight: bold;
+}
+.checkout-home,
+.checkout-home:hover {
+  color: #7ac751;
+}
+
+.checkout-total {
+  font-weight: 600;
+}
+.checkout-success-message {
+  margin-top: auto;
+}
+@media only screen and (min-width: 1441px) {
+  .checkout-success-container {
+    margin-top: 10rem;
+  }
+}
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .success-message-checkout,
+  .checkout-total,
+  .checkout-success-message,
+  .checkout-home {
+    font-size: 25px;
+  }
+  .checkout-table {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 760px) {
+  .success-message-checkout,
+  .checkout-total,
+  .checkout-success-message,
+  .checkout-home {
+    font-size: 20px;
+  }
+  .checkout-table {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  .slogan {
+    display: block;
+  }
+  .checkout-table {
+    width: 85%;
+  }
+  .checkout-success-container {
+    width: 100vw;
+  }
+  .success-message-checkout,
+  .checkout-total,
+  .checkout-success-message,
+  .checkout-home {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .slogan {
+    display: block;
+  }
+  .shop-icon-checkout {
+    width: 85%;
+  }
+  .checkout-success-container {
+    width: 100vw;
+  }
+  .checkout-table {
+    width: 99%;
+  }
+  .success-message-checkout,
+  .checkout-total,
+  .checkout-success-message,
+  .checkout-home {
+    font-size: 18px;
+  }
+}

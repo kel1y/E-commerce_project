@@ -1,0 +1,181 @@
+.signup-link {
+  width: 80%;
+}
+.signup-link > .link {
+  right: 0%;
+  margin-top: -5%;
+}
+.shop-icon-login {
+  width: 350px;
+  bottom: 30px;
+}
+.welcome-msg-login {
+  bottom: 25px;
+}
+.login-password-link {
+  color: #64b937;
+  left: 47%;
+}
+.login-password-link:hover {
+  color: #64b937;
+}
+.login-update-password {
+  margin: 0 0 3% 0;
+}
+.google-line1 {
+  border: 0.5px solid #acadac;
+  margin-top: -7%;
+  width: 22%;
+}
+.google-line2 {
+  border: 0.5px solid #acadac;
+  width: 22%;
+  left: 78%;
+  margin-top: -0.71%;
+  margin-bottom: 10%;
+}
+.google-msg {
+  color: #acadac;
+  display: block;
+  text-align: center;
+  z-index: 1;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+.google-button-login {
+  width: 60px;
+  left: 40%;
+}
+.password-icon-login {
+  top: -3.2rem;
+  left: 16rem;
+}
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .signup-link {
+    margin: 15% 0 0 0;
+    width: 100%;
+  }
+  .signup-link > .link {
+    right: 0%;
+  }
+  .login-password-link {
+    left: 58%;
+  }
+  .google-line1 {
+    border: 0.5px solid #acadac;
+    margin-top: -6%;
+    width: 25%;
+  }
+  .google-line2 {
+    border: 0.5px solid #acadac;
+    width: 25%;
+    left: 73%;
+    margin-top: -0.4%;
+  }
+  .password-icon-login {
+    left: 20rem;
+  }
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media only screen and (min-width: 601px) and (max-width: 760px) {
+  .signup-link > .link {
+    left: 1%;
+  }
+  .signup-link {
+    margin: 15% 0 15% 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .login-update-password {
+    margin-bottom: -10%;
+  }
+  .login-password-link {
+    left: 72%;
+  }
+  .google-line1 {
+    margin-top: -4%;
+    width: 30%;
+  }
+  .google-line2 {
+    width: 31%;
+    left: 68%;
+    margin-top: -0.4%;
+  }
+  .password-icon-login {
+    top: -3.7rem;
+    left: 30rem;
+  }
+}
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  .signup-link > .link {
+    left: 1%;
+  }
+  .signup-link {
+    margin: 15% 0 15% 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .form {
+    left: 10%;
+  }
+  .login-update-password {
+    margin-bottom: -10%;
+  }
+  .login-password-link {
+    left: 60%;
+  }
+  .google-line1 {
+    margin-top: -5%;
+    width: 20%;
+    left: 13%;
+  }
+  .google-line2 {
+    width: 21%;
+    left: 67%;
+    margin-top: -0.4%;
+  }
+  .password-icon-login {
+    top: -3.7rem;
+    left: 20rem;
+  }
+}
+
+/*====================MEDIA QUERIES(STUBBORN SMALL DEVICES)==================*/
+@media screen and (max-width: 425px) {
+  .signup-link {
+    margin: 10% 0 25% 0;
+    width: 100%;
+  }
+  .signup-link > .link {
+    right: 0%;
+    margin-top: -2%;
+  }
+  .msg-1 {
+    margin-top: -1.5%;
+  }
+  .login-update-password {
+    margin-bottom: -10%;
+  }
+  .login-password-link {
+    left: 64%;
+  }
+  .google-line1 {
+    margin-top: -5%;
+    width: 28%;
+  }
+  .google-line2 {
+    width: 28%;
+    left: 70%;
+    margin-top: -0.71%;
+  }
+  .password-icon-login {
+    top: -3.8rem;
+    left: 21rem;
+  }
+}

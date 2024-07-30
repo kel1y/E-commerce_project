@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&family=Rubik:wght@300;400&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.auth-layout {
+  height: 100%;
+}
+
+* {
+  position: relative;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.signup {
+  height: 100%;
+  font-family: 'Recursive', sans-serif;
+}
+
+.auth-main-container {
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5% 0 3%;
+  margin-top: 3.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav-options {
+  width: 100%;
+  display: flex;
+  column-gap: 5%;
+  justify-content: flex-end;
+}
+
+.option {
+  font-family: Arial;
+  letter-spacing: 1.5px;
+}
+
+.option a {
+  text-decoration: none;
+  color: black;
+}
+
+.option a:hover {
+  color: #64b937;
+}
+
+.falcon {
+  left: 5%;
+}
+
+.slogan {
+  background-color: #64b937;
+  color: white;
+  padding: 0.6% 0% 0.7% 0%;
+  margin-bottom: 10px;
+  width: 100vw;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  z-index: 100 !important;
+  height: 30px;
+}
+
+.slogan p {
+  font-family: Rubik !important;
+  left: 6%;
+  bottom: 50%;
+  bottom: 50%;
+  width: fit-content;
+}
+
+.circle1 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #64b937;
+  box-shadow: 20px 20px 50px 50px #64b937;
+  left: 70px;
+  top: 200px;
+  opacity: 12%;
+}
+
+.circle2 {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #6abc3e;
+  box-shadow: 20px 20px 50px 50px #6abc3e;
+  left: 300px;
+  top: 150px;
+  opacity: 12%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  bottom: 30%;
+}
+
+.welcome-msg,
+.welcome-msg-login {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-icon,
+.shop-icon-login {
+  order: 2;
+}
+
+.signup-form-div {
+  order: 3;
+}
+
+.shop-icon {
+  width: 350px;
+}
+
+.msg-1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgb(202, 201, 201) !important;
+  color: black;
+}
+
+.msg-2 {
+  text-shadow: 2px 2px 5px rgb(202, 201, 201);
+  color: black;
+}
+
+.welcome-msg a {
+  left: 15%;
+}
+
+.welcome-msg a,
+.welcome-msg-login a {
+  text-decoration: none;
+  color: #64b937;
+  text-shadow: 2px 2px 5px rgb(182, 181, 181);
+  right: 10%;
+  margin-top: -10%;
+  margin-top: -10%;
+}
+
+.welcome-msg a:hover,
+.welcome-msg-login a:hover {
+  color: #64b937;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.signup-form input {
+  height: 40px;
+  border: 1px solid #eaf0f7;
+  background-color: #eaf0f7;
+  margin: 5px 0px 20px 0px;
+  border-radius: 5px;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+  padding: 5px;
+  color: black;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.signup-form input::placeholder {
+  color: #615b5b;
+}
+
+.signup-form input.error {
+  border-color: red;
+}
+
+.signup-form button {
+  border: 1px solid #eaf0f7;
+  background-color: #64b937;
+  margin: 5px 0px 20px 0px;
+  border-radius: 6px;
+  color: white;
+  font-family: Arial;
+  letter-spacing: 1.5px;
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0px 7px 7px #d3e9f6;
+}
+
+.signup-form button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid #64b937;
+}
+
+.password-input-container {
+  display: inline-block;
+}
+
+.password-input-container input {
+  width: 100%;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.password-icon-signup  {
+  position: absolute;
+  right: -10px;
+  top: -13px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.error-message {
+  text-shadow: 2px 2px 5px rgb(202, 201, 201);
+  color: rgb(248, 38, 38);
+  font-size: 12px;
+  margin-top: -5%;
+}
+
+.toggle {
+  display: none;
+}
+
+.toggle-btn {
+  display: none;
+}
+
+.toggle-btn .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #64b937;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 1441px) {
+  .container {
+    top: -16%;
+  }
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media only screen and (min-width: 761px) and (max-width: 1024px) {
+  .auth-layout {
+    width: 100%;
+  }
+
+  .slogan {
+    padding: 1% 0% 1% 6%;
+  }
+
+  .circle1 {
+    top: 180px;
+  }
+
+  .circle2 {
+    top: 120px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+
+  .welcome-msg,
+  .welcome-msg-login {
+    top: 70%;
+    right: 40%;
+  }
+
+  .shop-icon,
+  .shop-icon-login {
+    width: 350px;
+    left: 50%;
+    bottom: 30%;
+    bottom: 30%;
+  }
+
+  .welcome-msg a {
+    left: 8%;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    right: 32%;
+    margin-top: -5%;
+    margin-top: -5%;
+  }
+
+  .signup-form {
+    width: 100%;
+  }
+
+  .signup-form input {
+    height: 45px;
+
+    font-size: 18px;
+  }
+
+  .signup-form button {
+    height: 45px;
+
+    font-size: 18px;
+  }
+
+  .password-icon {
+    top: 27px;
+  }
+
+  .error-message {
+    font-size: 13px;
+  }
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media only screen and (min-width: 601px) and (max-width: 760px) {
+  body {
+    display: flex;
+  }
+  .auth-layout {
+    width: 100vw;
+  }
+  .slogan {
+    padding: 1% 0% 1% 5%;
+  }
+
+  .nav-options {
+    display: none;
+  }
+
+  .falcon {
+    margin: 0% 0 15% -2%;
+  }
+
+  .shop-icon,
+  .shop-icon-login {
+    width: 500px;
+    display: block;
+    text-align: center;
+  }
+
+  .signup-form {
+    width: 70vw;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    bottom: 500px;
+    margin-top: 20px;
+  }
+
+  .signup-form input {
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .welcome-msg,
+  .welcome-msg-login {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 25px;
+  }
+
+  .circle1 {
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    left: 330px;
+    top: 60px;
+  }
+
+  .signin-link {
+    margin: 10% 0 0 0;
+    margin: 10% 0 0 0;
+    font-size: 25px;
+  }
+
+  .password-icon {
+    top: 32px;
+  }
+
+  .signup-form button {
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15%;
+  }
+
+  .toggle-btn {
+    display: block;
+    margin: 0% 0% 15% 0%;
+  }
+
+  .bar {
+    border-radius: 5px;
+  }
+
+  .welcome-msg a {
+    left: 1%;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    right: 0%;
+    margin-top: -5%;
+    margin-top: -5%;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-options li {
+    margin-bottom: 10px;
+  }
+
+  .nav-options a:hover {
+    color: #64b937;
+  }
+
+  .toggle:checked ~ .nav-options {
+    display: flex;
+  }
+
+  .error-message {
+    margin-top: -3%;
+  }
+}
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media only screen and (min-width: 426px) and (max-width: 600px) {
+  body {
+    display: flex;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .nav-options {
+    display: none;
+  }
+  .nav {
+    margin-top: 0;
+  }
+  .falcon {
+    margin: 10% 0 15% 0;
+  }
+
+  .shop-icon,
+  .shop-icon-login {
+    display: none;
+  }
+
+  .signup-form {
+    width: 70vw;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    bottom: 500px;
+    margin-top: 20px;
+    width: 100vw;
+  }
+
+  .signup-form input {
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .welcome-msg,
+  .welcome-msg-login {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 25px;
+  }
+
+  .circle1 {
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    top: 100px;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    left: 330px;
+    top: 60px;
+  }
+
+  .signin-link {
+    margin: 10% 0 0% 0;
+    font-size: 25px;
+  }
+
+  .welcome-msg a {
+    left: 2%;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    margin-top: -6%;
+  }
+
+  .password-icon {
+    top: 32px;
+  }
+
+  .signup-form button {
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15%;
+  }
+
+  .toggle-btn {
+    display: block;
+    margin: 0% 0% 10% 0%;
+  }
+
+  .bar {
+    border-radius: 5px;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    right: 0%;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-options li {
+    margin-bottom: 10px;
+  }
+
+  .nav-options a:hover {
+    color: #64b937;
+  }
+
+  .toggle:checked ~ .nav-options {
+    display: flex;
+  }
+
+  .error-message {
+    margin-top: -3%;
+  }
+}
+
+/*====================MEDIA QUERIES(STUBBORN SMALL DEVICES)==================*/
+@media screen and (max-width: 425px) {
+  body {
+    display: flex;
+  }
+
+  .slogan {
+    display: none;
+  }
+
+  .nav-options {
+    display: none;
+  }
+  .nav {
+    margin-top: 0;
+  }
+  .falcon {
+    margin: 10% 0 15% 0;
+  }
+
+  .shop-icon,
+  .shop-icon-login {
+    display: none;
+  }
+
+  .signup-form {
+    width: 85%;
+  }
+
+  .signup-form-div {
+    width: 95%;
+  }
+
+  .container {
+    width: 450px;
+    bottom: 50%;
+  }
+
+  .signup-form input {
+    height: 55px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+
+  .circle1 {
+    width: 300px;
+    height: 300px;
+    left: 50px;
+    top: 100px;
+  }
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    left: 250px;
+    top: 60px;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    right: 0%;
+  }
+
+  .signin-link {
+    margin: 25% 0 80% 0;
+    margin: 25% 0 80% 0;
+    right: 95%;
+  }
+
+  .welcome-msg a,
+  .welcome-msg-login a {
+    margin-top: -2%;
+  }
+
+  .msg-2 {
+    margin-bottom: 5%;
+  }
+
+  .msg-1 {
+    font-size: 30px;
+  }
+
+  .password-icon-signup  {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .signup-form button {
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 15%;
+  }
+
+  .toggle-btn {
+    display: block;
+    margin: 10% 0 15% 0;
+  }
+
+  .bar {
+    border-radius: 5px;
+  }
+
+  .nav-options {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    z-index: 1;
+  }
+
+  .nav-options li {
+    margin-bottom: 10px;
+  }
+
+  .nav-options a:hover {
+    color: #64b937;
+  }
+
+  .toggle:checked ~ .nav-options {
+    display: flex;
+  }
+
+  .error-message {
+    margin-top: -4%;
+  }
+}

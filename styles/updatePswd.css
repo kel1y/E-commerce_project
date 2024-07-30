@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive&family=Rubik:wght@300;400&display=swap');
+
+body{
+  max-width: 100%;
+  
+}
+.updatePswd-form{
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    border: solid 1px  rgba(0, 0, 0, 0.1);
+    padding: 40px 0px;
+    position: relative;
+  }
+  .inputPswd{
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+    
+  }
+.inputPswd .label{
+      color:black;
+      flex-basis: 20%;  
+  }
+ .inputPswd .inputfield{
+    flex-basis: 60%;
+    /* margin-bottom: 2px; */
+  }
+  .passwordIcon{
+    position: absolute;
+  right: 2vw;
+  top: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+ 
+
+  }
+  .inputfield .error{
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .inputfield .pswdInput{
+      width: 80%;
+      border: solid 1px  rgba(0, 0, 0, 0.1);
+      margin-left: 50px;
+      background-color: white;
+      padding: 10px;      
+      outline: none;
+      color: black;
+      border-radius: 5px;
+      
+  }
+  .inputPswd button {
+    border: 1px solid #eaf0f7;
+    background-color: #64b937;
+    margin: 30px 0px 0px 0px;
+    border-radius: 6px;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1.5px;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 7px 7px #d3e9f6;
+  }
+
+
+  @media (max-width:1200px) {
+  
+}
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
+  .updatePswd-form{
+    width: 50%;
+   
+  }
+  .inputPswd{
+    display: flex;
+    flex-direction: column;
+}  
+.inputfield{
+  width: 95%;
+}
+.inputPswd .label{  
+ width: 35vw;
+ margin-bottom: 4px;
+}
+.passwordIcon{
+  right: 4vw;
+}
+
+}
+@media only screen and (min-width: 601px) and (max-width: 760px) {
+  .passwordIcon{
+    right: 3vw;
+    
+  }
+  .updatePswd-form{
+    width: 60%;
+    margin-top: -20px;
+   
+  }
+  .inputfield{
+    width: 95%;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+  .inputPswd .label{  
+   width: 35vw;
+   margin-bottom: 4px;
+  }
+  .inputPswd{
+    display: flex;
+    flex-direction: column;
+} 
+}
+@media only screen and (min-width: 100px) and (max-width: 600px){
+  .updatePswd-form{
+    width: 80%;
+  
+  }
+  body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: inline-block
+}
+
+
+  .inputPswd{
+    display: flex;
+    flex-direction: column;
+
+}
+.inputfield{
+  width: 80%;
+}
+.inputfield .pswdInput{
+  width: 100%;
+  margin-left: 0;
+}
+.passwordIcon{
+right: -3vw;
+top: 20px;
+}
+}
+

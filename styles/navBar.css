@@ -1,0 +1,16 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #64B937;
+    height: 50px;
+    /* overflow: hidden; */
+} 
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media screen and (max-width:600px) {
+    .navbar-container {
+        display: none;
+    }
+}

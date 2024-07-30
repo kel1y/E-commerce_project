@@ -1,0 +1,522 @@
+.profile-navbar-container{
+  display: grid;
+  grid-template-columns: auto;
+  height: 80px;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.navbar-logo{
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  width: 130px;
+  margin-left: 2rem;
+  height: 100%;
+  justify-content: space-between;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px; 
+  position: relative;
+}
+.navbar-links ul{
+  list-style-type: none;
+  float: right;
+  width: 500px;
+  margin-right: 11rem;
+}
+.navbar-links ul li{
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+#check{
+  display: none;
+}
+.navbar-logo .logo {
+  height: 100%;
+  width: 100%;
+}
+.chechbtn{
+  color: #000;
+  font-size: 30px;
+  right: 0;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+  display: none;
+}
+.links{
+  width: 100%;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+}
+.links:hover{
+  color: #64B937;
+}
+input:invalid ~  .errorMessage {
+    display: block;
+  }
+  .profile-container {
+    margin: 9rem auto;
+    position: relative;
+    display: flex;
+    border: 1px solid #E8E8E8;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 25px;
+    padding-top: 0;
+    line-height: 35px;
+    width: 1000px;
+    height: 607px;
+    color: #000;
+  }
+   .profile-avatar{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 320px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-avatar img{
+   width: 106px;
+   background-color: #000;
+   height: 106px;
+   border-radius: 50%;
+  }
+  .profile-avatar .user-name{
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .user-name .name {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    color: #565656;
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    justify-content: space-between;
+  }
+  .user-name .name span {
+    margin-right: 7px;
+  }
+  .profile-container .profile-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 700px;
+  }
+  .profile-info h4{
+    text-transform: capitalize;
+    color: #565656;
+  }
+  .profile-info .profile-address{
+    justify-content: space-between;
+    width: 180px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-address p{
+    margin: 5px 0 0 0;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+  }
+  .profile-address p span{
+    width: 55%;
+    text-align: left;
+  }
+  .personal-info{
+    justify-content: space-between;
+    width: 280px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .personal-info p{
+    margin: 5px 0 0 0;
+    text-transform: capitalize;
+    width: 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .personal-info p span{
+    width: 42%;
+    text-align: left;
+  }
+  .profile-container button{
+    position: absolute;
+    right: 5rem;
+    bottom: 0;
+    top: -2rem;
+    border-radius: 0%;
+    width: 169px;
+    height: 51px;
+    border: none;
+    background-color: #64B937;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+  }
+  .profile-container button:hover{
+    cursor: pointer;
+  }
+  .profile-container-edit {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    border: 1px solid #E8E8E8;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 30px;
+    width: 920px;
+    height: 550px;
+    color: #000;
+  }
+  .Tabs{
+    width: 100%;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    height:100vh;
+  }
+  .TabList{
+    width: 150px;
+    justify-content: space-between;
+    display: flex;
+    margin-top:7rem;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .address-container {
+    max-height: 300px;
+    padding-bottom: 2rem;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    position: relative;
+  }
+  
+  .profile-form input[type="text"] {
+    width: 40%;
+    height: 24px;
+    position: absolute;
+    right: 12rem;
+    color: #8F8F8F;
+    border: 1px solid #E8E8E8;
+    background-color: transparent;
+  
+  }
+  .profile-form input[type="date"] {
+    width: 37%;
+    height: 7px;
+    position: absolute;
+    right: 12rem;
+    color: #8F8F8F;
+    border: 1px solid #E8E8E8;
+    background-color: transparent;
+  
+  }
+  .profile-form .errorMessage {
+    position: relative;
+    color: red;
+    top: 2.1rem;
+    right: .8rem;
+    padding-bottom: 15px;
+    width: 100%;
+    display: none;
+    }
+  .profile-form input::placeholder{
+    text-transform: capitalize;
+  }
+  .address-container label{
+    color: #565656;
+    text-transform: capitalize;
+  }
+  .profile-container-edit button{
+    float: right;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+    width: 169px;
+    height: 51px;
+    border-radius: 0%;
+    background-color: #64B937;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+  }
+  .profile-avatar .file {
+    margin-left: 1rem;
+  }
+ .file input[type="file"]{
+  display: none;
+  }
+ .profile-avatar .custom-file-upload{
+    border: 1px solid #E8E8E8;
+    width: 163px;
+    height: 30px;
+    padding: 5px 10px;
+    color: #565656;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 761px) and (max-width: 1024px){
+    .profile-container-edit {
+      padding-top: 1rem;
+      margin:  0 0;
+      border: 1px solid #E8E8E8;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      padding-left: 0px;
+      width: 600px;
+      height:fit-content;
+    }
+    .profile-container-edit button{
+      float: none;
+      margin-top: 1rem;
+      margin-bottom: .7rem;
+      margin-right: 0rem;
+      margin-left: 6rem;
+      width: 300px;
+      height: 51px;
+      border-radius: 0%;
+      background-color: #64B937;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: #fff;
+    }
+    .address-container {
+      max-height: 300px;
+      padding-bottom: 15px;
+      display: grid;
+      width: 500px;
+      grid-template-columns: auto auto;
+    }
+    .profile-form input[type="text"] {
+      width: 40%;
+      height: 24px;
+      position: absolute;
+      right: 2rem;
+      color: #8F8F8F;
+      border: 1px solid #E8E8E8;
+      background-color: transparent;
+    
+    }
+    .profile-form input[type="date"] {
+      width: 33.6%;
+      height: 7px;
+      position: absolute;
+      right: 2rem;
+      color: #8F8F8F;
+      border: 1px solid #E8E8E8;
+      background-color: transparent;
+    
+    }
+    .address-container label{
+      color: #565656;
+      text-transform: capitalize;
+    }
+    .navbar-links ul{
+      list-style-type: none;
+      float: right;
+      width: 500px;
+      margin-right: 2rem;
+    }
+  }
+  @media screen and (max-width: 600px){
+    .profile-container {
+      display: grid;
+      grid-template-columns: auto;
+      width: 390px;
+      margin: 4rem auto;
+      padding-left: 2rem;
+      border: none;
+      justify-content: start;
+      height: fit-content;
+    }
+    .profile-avatar{
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      align-items:left-start;
+      width: 300px;
+    }
+    .profile-avatar img{
+      width: 80px;
+      background-color: #000;
+      height: 80px;
+      border-radius: 50%;
+     }
+    .profile-container .profile-info{
+      display: grid;
+      grid-template-columns: auto;
+      width: 300px;
+    }
+    .profile-container .profile-address{
+      width: 90%;
+      margin-bottom: 10px;
+      line-height: 30px;
+    }
+    .personal-info{
+      line-height: 30px;
+      width: 90%;
+    }
+    .profile-container button{
+      position: relative;
+      right: 0;
+      bottom: 0px;
+      top: .1px;
+      width: 80%;
+      margin-top: 1.2rem;
+    }
+    .profile-container-edit {
+      padding-top: 1rem;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      padding-left: 20px;
+      width: 100%;
+      height:fit-content;
+    }
+    .address-container {
+      max-height: 300px;
+      padding-bottom: 15px;
+      display: grid;
+      width: 390px;
+      grid-template-columns: auto;
+    }
+    .profile-form input[type="text"] {
+      margin-top: 5px;
+      width: 70%;
+      height: 24px;
+      position: relative;
+      right: 0;
+      color: #8F8F8F;
+    }
+    .profile-form input[type="date"] {
+      margin-top: 5px;
+      width: 63%;
+      height: 7px;
+      position: relative;
+      right: 0;
+      color: #8F8F8F;
+    
+    }
+    .address-container label{
+      color: #565656;
+      text-transform: capitalize;
+    }
+    .profile-container-edit button{
+      width: 73%;
+      position: relative;
+      float: left;
+      top: 1rem;
+      height: 51px;
+    }
+    .profile-form .errorMessage {
+      position: relative;
+      left: 0;
+      top: 0;
+      color: red;
+      top: 5px;
+      right: .8rem;
+      padding-bottom: 0px;
+      width: 100%;
+      display: none;
+      }
+      .profile-navbar-container{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+        height: 60px;
+      }
+      .navbar-logo{
+        margin-top: 10px;
+        margin-left: 0.2rem;
+      }
+      .chechbtn{
+        display: block;
+        position: fixed;
+        right: 1rem;
+        top: 5px;
+      }
+      .navbar-links {
+        width:100%;
+        display: grid;
+        height: 70px;
+        margin: 0;
+        grid-template-columns: auto
+      }
+      .navbar-links ul{
+        padding: 0;
+        margin:1.12rem 0 0 0;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        width: 340px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        height:fit-content;
+        left: -100%;
+        transition: .5s all;
+      }
+      .links{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      }
+      .navbar-links ul li{
+        margin: 0 0;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        line-height: 60px;
+        width: 97%;
+      }
+      #check:checked ~ ul{
+        left: 0;
+      }
+      .Tabs{
+        height: 900px;
+
+      }
+    }
+    @media screen and (max-width:375px) {
+      .checkbtn{
+      top: .5rem;
+      }
+      .navbar-links{
+        width: 100%;
+      }
+  }
+  @media screen and (max-width:414px) {
+    .navbar-links{
+      width: 414px;
+      margin: 0;
+      padding: 0;
+    }
+  }

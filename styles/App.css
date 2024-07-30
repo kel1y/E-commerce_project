@@ -1,0 +1,99 @@
+#root {
+  margin: 0;
+  height: 100%;
+  overflow: visible;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.spinner {
+  font-size: 28px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-color: transparent;
+  border: 3px solid whitesmoke;
+  border-top: 3px solid #64B937;
+  border-radius: 50%;
+  margin: 10rem auto;
+  animation: spinnerAnimation 1s linear infinite;
+}
+
+@keyframes spinnerAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* .logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+} */
+h3 {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #000;
+}
+/* .navbar-container{
+  display: grid;
+  grid-template-columns: auto;
+  max-width: 100%;
+} */
+/* .profile-navbar-container .navbar{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #64B937;
+} */
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  background-color: #E8E8E8;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555555;
+  border-radius: 10px;
+}

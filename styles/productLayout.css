@@ -1,0 +1,34 @@
+.product-layout {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 138vh;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media screen and (max-width:1024px) {
+  .product-layout {
+    justify-content: center;
+  }
+}
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media screen and (max-width: 600px) {
+  .product-layout {
+    justify-content: center;
+  }
+}
+
+/*====================MEDIA QUERIES(STUBBORN SMALL DEVICES)==================*/
+@media screen and (max-width: 375px) {
+  .product-layout {
+    justify-content: center;
+  }
+}

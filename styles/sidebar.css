@@ -1,0 +1,157 @@
+.sidebar-container-dashboard{
+    width: 297px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 11;
+    color: #000;
+    transition: all .5s ease;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.sidebar-container-dashboard .logo{
+    width: 150px;
+    height: 40px;
+    top: 2rem;
+    margin-left: 3.8rem;
+    margin-bottom: 2rem;
+}
+.ul-list{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+ .ul-list li {
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    justify-content: center;
+}
+.sidebar-links {
+display: flex;
+margin-top: .6rem;
+width: 100%;
+align-items: center;
+padding-bottom: 3px;
+height: 56px;
+text-decoration: none;
+font-size: 17px;
+color: #000;
+}
+
+.sidebar-container-dashboard button {
+    margin-top: .6rem;
+    border-radius: 0;
+    width: 100%;
+    height: 56px;
+    color: #C5C5C5;
+    background-color: transparent;
+    display: flex;
+    padding-left: 5rem;
+    align-items: center;
+    text-transform: capitalize;
+}
+.sidebar-container-dashboard button img {
+    margin-right: 15px ;
+}
+
+.sidebar-container-dashboard button:hover{
+    background-color: rgb(247, 198, 198);
+    color: #000;
+}
+ .sidebar-links:hover {
+    background-color: #D7F9C5;
+    color: #000;
+}
+ .ul-list li img {
+    width: 18px;
+    margin:5px 20px 0 80px;
+}
+
+.checkbtn{
+    color: #000;
+    font-size: 30px;
+    top: 1rem;
+    right: 10px;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    display:  none;
+    z-index: 10;
+}
+#checkBox{
+    display: none;
+}
+
+.active {
+    background-color: #D7F9C5;
+}
+
+.disabled {
+    color: grey;
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media screen and (max-width:1024px) {
+    .sidebar-container-dashboard{
+        position: fixed;
+        left: -100%;
+        top: 3.76567rem;
+    }
+    .sidebar-container-dashboard .logo{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+        top: 10px;
+    }
+    #checkBox:checked ~ .sidebar-container-dashboard{
+        left: 0;
+    }
+
+}
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media screen and (max-width:600px) {
+    .sidebar-container-dashboard{
+        position: fixed;
+        left: -100%;
+        top: 3.76567rem;
+    }
+    .sidebar-container-dashboard .logo{
+        width: 150px;
+        height: 40px;
+        top: 2rem;
+        margin-left: 3.8rem;
+        margin-bottom: 2rem;
+    }
+    .checkbtn{
+        display: block;
+    }
+    #checkBox:checked ~ .sidebar-container-dashboard{
+        left: 0;
+    }
+
+}
+
+/*====================MEDIA QUERIES(STUBBORN SMALL DEVICES)==================*/
+@media screen and (max-width:375px) {
+    .checkbtn{
+    top: .5rem;
+    right: 4px;
+
+    }
+}
+@media screen and (max-width:450px) {
+    .checkbtn{
+    top: .5rem;
+
+    }
+}

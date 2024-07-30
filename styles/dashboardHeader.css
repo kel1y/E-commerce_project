@@ -1,0 +1,136 @@
+.dashboard-header {
+  width: 80%;
+  color: black;
+  position: fixed;
+  left: 8rem;
+  top: 3rem;
+  margin-left: 10rem;
+  margin-top: -3rem;
+  padding: 10px;
+  height: 60px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  z-index: 10;
+  background-color: #f8f7fc;
+}
+.dashboard-header .notification span {
+  position: absolute;
+  background-color: #64b937;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  display: flex;
+  top: -15px;
+  right: -8px;
+  width: fit-content;
+  height: 15px;
+  padding: 5px;
+}
+.dash-text {
+  color: green;
+  text-transform: capitalize;
+}
+.dashboard-header .logo-dashboard {
+  display: none;
+}
+.dashboard-avatar {
+  display: flex;
+  width: 110px;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-avatar .user-profile {
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+  cursor: pointer;
+}
+.dashboard-avatar img {
+  width: 26px;
+  height: 26px;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .dashboard-header {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    right: 0;
+    color: black;
+    top: 0rem;
+    left: 0rem;
+    height: 60px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    align-items: left;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    z-index: 1;
+  }
+  .dashboard-header p {
+    display: none;
+  }
+  .dashboard-avatar {
+    width: 100px;
+    margin-right: 5rem;
+  }
+  .dashboard-avatar .user-profile {
+    width: 40px;
+    height: 40px;
+  }
+  .dashboard-header .logo-dashboard {
+    display: block;
+    margin-left: 5.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dashboard-header {
+    position: relative;
+    margin: 0;
+    width: 330px;
+    right: 0;
+    color: black;
+    top: 0rem;
+    left: 1rem;
+    height: 60px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    align-items: left;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    z-index: 1;
+  }
+  .dashboard-header p {
+    display: none;
+  }
+  .dashboard-avatar {
+    width: 100px;
+  }
+  .dashboard-avatar .user-profile {
+    width: 40px;
+    height: 40px;
+  }
+  .dashboard-header .logo-dashboard {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .dashboard-header {
+    width: 100%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .dashboard-header {
+    width: 100%;
+    left: 0;
+  }
+}

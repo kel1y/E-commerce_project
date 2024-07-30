@@ -1,0 +1,21 @@
+$primary-color: #007bff;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+
+  .title {
+    font-size: 2rem;
+    color: $primary-color;
+  }
+
+  button {
+    display: inline-block;
+    padding: 1rem;
+    background-color: $primary-color;
+    color: #fff;
+    border-radius: 0.25rem;
+    text-decoration: none;
+  }
+}

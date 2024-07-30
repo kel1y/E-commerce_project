@@ -1,0 +1,479 @@
+.product-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.productForm-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-left: 18rem;
+    padding: 60px 120px;
+}
+
+.productForm-container form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.details-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.custom-file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #E8E8E8;
+    background-color: white;
+    height: 160px;
+    width: 180px;
+    transition: 0.2s;
+}
+
+.custom-file-upload:hover {
+    box-shadow: 2px 2px 8px;
+}
+
+.custom-file-upload img {
+    height: 20px;
+}
+
+.preview-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
+    max-width: 750px;
+    max-height: 550px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.preview-wrapper::-webkit-scrollbar {
+    background-color: #E8E8E8;
+    width: 5px;
+}
+
+.preview-wrapper::-webkit-scrollbar-thumb {
+    background-color: #a7a7a7;
+    border-radius: 10px;
+}
+
+.preview-wrapper img {
+    height: 210px
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.images-wrapper span {
+    text-align: left;
+    font-size: 13px;
+    color: rgb(240, 111, 25);
+}
+
+.productForm-container form input[type=text],
+input[type=date],
+input[type=number] {
+    border: solid 1px #E8E8E8;
+    width: 535px;
+    padding: 10px 15px;
+    background-color: white;
+    color: #555555;
+}
+
+input::placeholder {
+    color: #E8E8E8;
+}
+
+select {
+    border: solid 1px #E8E8E8;
+    width: 565px;
+    padding: 10px 15px;
+    background-color: white !important;
+    color: #555555;
+    padding-right: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Remove default arrow */
+    background: url('../assets/Arrow_down.svg') no-repeat 98% 50%;
+    /* Add custom arrow */
+}
+
+.list-placeholder {
+    color: #a7a7a7 !important;
+}
+
+.btn-submit-large {
+    background-color: #64B937;
+    width: fit-content;
+    height: 40px;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+.btn-submit {
+    background-color: #64B937;
+    width: 111px;
+    height: 40px;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+.productForm-container label {
+    color: #555555;
+}
+
+.mini-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mini-wrapper label {
+    text-align: left;
+    font-size: 14px;
+}
+
+.mini-wrapper span {
+    text-align: left;
+    font-size: 13px;
+    color: rgb(240, 111, 25);
+}
+
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-nav label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #555555;
+}
+
+.logo-nav {
+    display: none;
+}
+
+.back-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.user-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.user-avatar {
+    border: solid 1px #E8E8E8;
+    border-radius: 50%;
+    height: 50px;
+    margin-right: 70px;
+}
+
+.category-dropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.category-dropdown button {
+    height: 40px;
+    width: 60px;
+    color: #E8E8E8;
+    border: solid 1px #E8E8E8;
+    border-radius: 1px;
+    background-color: white;
+}
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-image: url('../assets/calendar.svg');
+    background-size: cover;
+    opacity: 1;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.title label {
+    color: #555555;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/*====================MEDIA QUERIES(MEDIUM DEVICES)==================*/
+@media screen and (max-width:1024px) {
+    .logo-nav {
+        display: flex
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productForm-container {
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .productForm-container form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .mini-wrapper label {
+        font-size: 18px;
+    }
+
+    .productForm-container form input[type=text],
+    input[type=date],
+    input[type=number] {
+        width: 400px;
+        height: 20px;
+    }
+
+    select {
+        width: 430px;
+        height: 50px;
+    }
+
+    .btn-submit {
+        width: 196px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .top-nav {
+        align-items: center;
+    }
+
+    .user-avatar {
+        margin: 0;
+    }
+
+    .back-nav {
+        display: none;
+    }
+
+    .title {
+        display: flex;
+    }
+
+    .preview-wrapper {
+        justify-content: center;
+        gap: 25px;
+        max-width: 100%
+    }
+
+    .preview-wrapper img {
+        height: 150px;
+    }
+
+    .custom-file-upload {
+        align-self: center;
+        height: 150px;
+        width: 140px;
+        /* margin-left: 38px; */
+        margin-top: 10px;
+    }
+
+    .images-wrapper {
+        margin-bottom: 80px
+    }
+}
+
+/*====================MEDIA QUERIES(SMALL DEVICES)==================*/
+@media screen and (max-width:600px) {
+    .logo-nav {
+        display: flex
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+
+    .productForm-container {
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .productForm-container form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .mini-wrapper label {
+        font-size: 14px;
+    }
+
+    .productForm-container form input[type=text],
+    input[type=date],
+    input[type=number] {
+        width: 300px;
+    }
+
+    select {
+        width: 330px;
+    }
+
+    .btn-submit-large {
+        width: 196px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .btn-submit {
+        width: 196px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .top-nav {
+        align-items: center;
+    }
+
+    .user-avatar {
+        margin: 0;
+    }
+
+    .back-nav {
+        display: none;
+    }
+
+    .title {
+        display: flex;
+    }
+
+    .preview-wrapper {
+        justify-content: center;
+        gap: 25px;
+        max-width: 100%
+    }
+
+    .preview-wrapper img {
+        height: 150px;
+    }
+
+    .custom-file-upload {
+        align-self: center;
+        height: 150px;
+        width: 140px;
+        /* margin-left: 38px; */
+        margin-top: 10px;
+    }
+
+    .images-wrapper {
+        margin-bottom: 80px
+    }
+}
+
+/*====================MEDIA QUERIES(STUBBORN SMALL DEVICES)==================*/
+@media screen and (max-width:375px) {
+    .logo-nav {
+        display: flex
+    }
+
+    .product-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .productForm-container {
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        margin-left: 0rem;
+    }
+
+    .productForm-container form {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .productForm-container form input[type=text],
+    input[type=date],
+    input[type=number] {
+        width: 300px;
+    }
+
+    select {
+        width: 330px;
+    }
+
+    .btn-submit {
+        width: 196px;
+        align-self: center;
+        margin-top: 10px;
+    }
+
+    .top-nav {
+        align-items: center;
+    }
+
+    .user-avatar {
+        margin: 0;
+    }
+
+    .back-nav {
+        display: none;
+    }
+
+    .title {
+        display: flex;
+    }
+
+    .preview-wrapper {
+        gap: 10px;
+        max-width: 100%
+    }
+
+    .images-wrapper {
+        margin-bottom: 30px
+    }
+}
